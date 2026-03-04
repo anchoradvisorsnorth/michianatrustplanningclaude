@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Michiana Trust Planning — Protect Your Family Without the Legal Fees</title>
+<meta name="description" content="Create a complete, attorney-reviewed revocable living trust in Indiana — without hiring a lawyer. 7 documents, step-by-step guidance, delivered in minutes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:    #1b2a3b;
+  --navy2:   #243447;
+  --cream:   #f8f4ee;
+  --gold:    #b8862a;
+  --gold-lt: #d4a84b;
+  --gold-bg: rgba(184,134,42,0.09);
+  --gold-br: rgba(184,134,42,0.28);
+  --sage:    #4a7c5c;
+  --sage-bg: rgba(74,124,92,0.09);
+  --red-bg:  rgba(192,57,43,0.13);
+  --red-br:  rgba(192,57,43,0.3);
+  --red-txt: #c0392b;
+  --text:    #2c3e50;
+  --muted:   #6b7280;
+  --border:  rgba(27,42,59,0.1);
+  --white:   #ffffff;
+  --serif:   'Playfair Display', Georgia, serif;
+  --sans:    'Lato', sans-serif;
+  --shadow:  0 4px 24px rgba(27,42,59,0.08);
+  --shadow-lg: 0 12px 48px rgba(27,42,59,0.14);
+  --r: 10px;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--sans);background:var(--cream);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.5rem;}
+.wrap-sm{max-width:740px;margin:0 auto;padding:0 1.5rem;}
+
+/* TOPBAR */
+.topbar{background:var(--gold);text-align:center;padding:.5rem 1rem;font-size:.82rem;font-weight:700;color:#fff;letter-spacing:.03em;}
+
+/* NAV */
+nav{background:var(--navy);padding:0 1.5rem;position:sticky;top:0;z-index:200;border-bottom:2px solid var(--gold);}
+.nav-in{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:66px;}
+.nav-logo{font-family:var(--serif);color:#fff;font-size:1.1rem;line-height:1.25;}
+.nav-logo span{color:var(--gold-lt);display:block;font-size:.68rem;font-family:var(--sans);letter-spacing:.14em;text-transform:uppercase;font-weight:300;}
+.nav-links{display:flex;align-items:center;gap:1.75rem;list-style:none;}
+.nav-links a{color:rgba(255,255,255,.65);font-size:.84rem;transition:color .2s;}
+.nav-links a:hover{color:var(--gold-lt);}
+.nav-cta{background:var(--gold)!important;color:#fff!important;padding:.48rem 1.2rem!important;border-radius:6px;font-weight:700!important;opacity:1!important;transition:background .2s!important;}
+.nav-cta:hover{background:var(--gold-lt)!important;}
+
+/* HERO */
+.hero{background:var(--navy);padding:5.5rem 1.5rem 4.5rem;overflow:hidden;position:relative;}
+.hero::after{content:'';position:absolute;right:-100px;top:-60px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(184,134,42,.13) 0%,transparent 70%);pointer-events:none;}
+.hero-in{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1fr 400px;gap:3.5rem;align-items:center;}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:var(--gold-bg);border:1px solid var(--gold-br);color:var(--gold-lt);font-size:.73rem;letter-spacing:.1em;text-transform:uppercase;padding:.38rem 1rem;border-radius:2rem;margin-bottom:1.6rem;font-weight:700;}
+.hero h1{font-family:var(--serif);font-size:clamp(2.1rem,4.2vw,3.3rem);color:#fff;line-height:1.15;margin-bottom:1.25rem;}
+.hero h1 em{color:var(--gold-lt);font-style:italic;}
+.hero-desc{font-size:1rem;color:rgba(255,255,255,.62);margin-bottom:2rem;font-weight:300;max-width:460px;line-height:1.75;}
+.hero-proof{display:flex;flex-wrap:wrap;gap:.65rem 1.5rem;margin-bottom:2.25rem;}
+.hero-proof li{list-style:none;font-size:.82rem;color:rgba(255,255,255,.52);display:flex;align-items:center;gap:.4rem;}
+.hero-proof li::before{content:'✓';color:var(--gold-lt);font-weight:700;}
+
+/* HERO CARD */
+.hero-card{background:#fff;border-radius:16px;padding:1.9rem 1.75rem;box-shadow:var(--shadow-lg);position:relative;}
+.hc-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--gold);color:#fff;font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:.28rem .9rem;border-radius:2rem;white-space:nowrap;}
+.hc-title{font-family:var(--serif);font-size:1.25rem;text-align:center;margin:.65rem 0 .15rem;color:var(--navy);}
+.hc-price{text-align:center;margin-bottom:1.4rem;}
+.hc-price .amt{font-family:var(--serif);font-size:2.7rem;font-weight:700;color:var(--navy);line-height:1;}
+.hc-price .compare{font-size:.8rem;color:var(--muted);text-decoration:line-through;margin-right:.3rem;}
+.hc-price .sub{font-size:.76rem;color:var(--muted);margin-top:.15rem;}
+.doc-list{list-style:none;margin-bottom:1.4rem;border-top:1px solid var(--border);}
+.doc-list li{display:flex;align-items:center;gap:.6rem;padding:.52rem 0;border-bottom:1px solid var(--border);font-size:.86rem;color:var(--text);}
+.doc-list li::before{content:'📄';font-size:.85rem;flex-shrink:0;}
+.btn-gold{display:block;width:100%;background:var(--gold);color:#fff;text-align:center;padding:.9rem 1rem;border-radius:8px;font-weight:700;font-size:.97rem;border:none;cursor:pointer;transition:background .2s,transform .15s;letter-spacing:.02em;}
+.btn-gold:hover{background:var(--gold-lt);transform:translateY(-1px);}
+.hc-foot{text-align:center;margin-top:.75rem;font-size:.73rem;color:var(--muted);}
+
+/* TRUST STRIP */
+.strip{background:var(--navy2);padding:1.1rem 1.5rem;border-bottom:1px solid rgba(255,255,255,.05);}
+.strip-in{max-width:1080px;margin:0 auto;display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap;}
+.strip-item{display:flex;align-items:center;gap:.5rem;font-size:.8rem;color:rgba(255,255,255,.55);}
+
+/* SECTIONS */
+section{padding:5rem 1.5rem;}
+.eyebrow{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:.45rem;}
+.sec-title{font-family:var(--serif);font-size:clamp(1.75rem,2.8vw,2.5rem);color:var(--navy);line-height:1.2;margin-bottom:.9rem;}
+.sec-title em{color:var(--gold);font-style:italic;}
+.sec-desc{color:var(--muted);font-size:.97rem;max-width:540px;font-weight:300;line-height:1.75;}
+
+/* PAIN */
+.pain{background:var(--cream);}
+.pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.75rem;}
+.pain-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:1.7rem 1.4rem;position:relative;overflow:hidden;transition:box-shadow .2s;}
+.pain-card:hover{box-shadow:var(--shadow);}
+.pain-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--red-txt);}
+.pain-card .icon{font-size:1.65rem;margin-bottom:.85rem;}
+.pain-card h3{font-family:var(--serif);font-size:1.05rem;margin-bottom:.5rem;color:var(--navy);}
+.pain-card p{font-size:.86rem;color:var(--muted);}
+.pain-card .source{margin-top:.85rem;font-size:.75rem;color:var(--gold);font-style:italic;}
+
+/* EXPLAINER */
+.explainer{background:var(--navy);color:#fff;}
+.explainer .sec-title{color:#fff;}
+.explainer .sec-desc{color:rgba(255,255,255,.6);}
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2.75rem;}
+.compare-box{border-radius:var(--r);padding:1.9rem 1.75rem;}
+.compare-box.bad{background:var(--red-bg);border:1px solid var(--red-br);}
+.compare-box.good{background:var(--sage-bg);border:1px solid rgba(74,124,92,.3);}
+.compare-box h4{font-family:var(--serif);font-size:1.1rem;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem;}
+.compare-box.bad h4{color:#e87d6e;}
+.compare-box.good h4{color:#7ec89a;}
+.compare-box ul{list-style:none;display:flex;flex-direction:column;gap:.55rem;}
+.compare-box ul li{font-size:.87rem;color:rgba(255,255,255,.75);display:flex;align-items:flex-start;gap:.6rem;}
+.compare-box ul li span{flex-shrink:0;font-weight:700;margin-top:.05rem;}
+.compare-box.bad ul li span{color:#e87d6e;}
+.compare-box.good ul li span{color:#7ec89a;}
+.stats-row{display:flex;justify-content:center;gap:4rem;flex-wrap:wrap;margin-top:3.5rem;padding-top:3rem;border-top:1px solid rgba(255,255,255,.08);}
+.big-stat{text-align:center;}
+.big-stat .v{font-family:var(--serif);font-size:2.8rem;color:var(--gold-lt);line-height:1;display:block;}
+.big-stat .l{font-size:.78rem;color:rgba(255,255,255,.45);margin-top:.3rem;}
+
+/* HOW IT WORKS */
+.how{background:var(--cream);}
+.steps{margin-top:3rem;display:flex;flex-direction:column;gap:0;}
+.step{display:grid;grid-template-columns:70px 1fr;gap:1.5rem;padding-bottom:2.5rem;position:relative;}
+.step:not(:last-child)::after{content:'';position:absolute;left:34px;top:70px;bottom:0;width:2px;background:var(--border);}
+.step-num{width:70px;height:70px;border-radius:50%;background:var(--navy);color:var(--gold-lt);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:1.5rem;font-weight:700;flex-shrink:0;position:relative;z-index:1;border:3px solid var(--gold);}
+.step-body{padding-top:.8rem;}
+.step-body h3{font-family:var(--serif);font-size:1.15rem;margin-bottom:.4rem;color:var(--navy);}
+.step-body p{font-size:.88rem;color:var(--muted);max-width:520px;}
+.step-time{display:inline-block;margin-top:.5rem;background:var(--gold-bg);border:1px solid var(--gold-br);color:var(--gold);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .65rem;border-radius:2rem;font-weight:700;}
+
+/* DOCUMENTS */
+.docs{background:#fff;}
+.doc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:2.5rem;}
+.doc-card{background:var(--cream);border:1px solid var(--border);border-radius:var(--r);padding:1.4rem 1.2rem;text-align:center;transition:box-shadow .2s,transform .2s;}
+.doc-card:hover{box-shadow:var(--shadow);transform:translateY(-2px);}
+.doc-card .emoji{font-size:1.9rem;margin-bottom:.7rem;}
+.doc-card h4{font-family:var(--serif);font-size:.95rem;margin-bottom:.4rem;color:var(--navy);}
+.doc-card p{font-size:.77rem;color:var(--muted);}
+.doc-note{margin-top:1.75rem;padding:1.2rem 1.4rem;background:var(--sage-bg);border:1px solid rgba(74,124,92,.22);border-radius:var(--r);font-size:.86rem;color:var(--sage);display:flex;align-items:flex-start;gap:.75rem;line-height:1.65;}
+
+/* FUNDING — key differentiator section */
+.funding{background:var(--navy);color:#fff;padding:5rem 1.5rem;}
+.funding .sec-title{color:#fff;}
+.funding .sec-desc{color:rgba(255,255,255,.6);}
+.fund-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2.75rem;}
+.fund-box{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);padding:1.75rem;}
+.fund-box h4{font-family:var(--serif);font-size:1.05rem;color:var(--gold-lt);margin-bottom:1rem;}
+.fund-steps{list-style:none;display:flex;flex-direction:column;gap:.6rem;}
+.fund-steps li{font-size:.86rem;color:rgba(255,255,255,.7);display:flex;align-items:flex-start;gap:.65rem;}
+.fund-steps li .num{background:var(--gold);color:#fff;width:1.25rem;height:1.25rem;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;flex-shrink:0;margin-top:.15rem;}
+.mistake-list{list-style:none;display:flex;flex-direction:column;gap:.55rem;}
+.mistake-list li{font-size:.86rem;color:rgba(255,255,255,.7);display:flex;align-items:flex-start;gap:.65rem;}
+.mistake-list li::before{content:'⚠';font-size:.8rem;flex-shrink:0;margin-top:.1rem;}
+
+/* PRICING */
+.pricing{background:var(--cream);}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:3rem;}
+.price-card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:2rem 1.75rem;position:relative;transition:box-shadow .2s;}
+.price-card:hover{box-shadow:var(--shadow-lg);}
+.price-card.feat{background:var(--navy);border-color:var(--gold);}
+.pop-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--gold);color:#fff;font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:.26rem .9rem;border-radius:2rem;white-space:nowrap;}
+.price-card h3{font-family:var(--serif);font-size:1.2rem;margin-bottom:.2rem;color:var(--navy);}
+.price-card.feat h3{color:#fff;}
+.price-amt{font-family:var(--serif);font-size:2.5rem;font-weight:700;color:var(--navy);line-height:1;margin:.65rem 0 .2rem;}
+.price-card.feat .price-amt{color:#fff;}
+.price-sub{font-size:.78rem;color:var(--muted);margin-bottom:1.4rem;}
+.price-card.feat .price-sub{color:rgba(255,255,255,.5);}
+.feat-list{list-style:none;display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.85rem;}
+.feat-item{font-size:.85rem;display:flex;align-items:flex-start;gap:.55rem;}
+.feat-item::before{content:'✓';color:var(--sage);font-weight:700;flex-shrink:0;margin-top:.05rem;}
+.feat-item.no{color:var(--muted);}
+.feat-item.no::before{content:'–';color:var(--muted);}
+.price-card.feat .feat-item{color:rgba(255,255,255,.8);}
+.price-card.feat .feat-item::before{color:var(--gold-lt);}
+.btn-outline{display:block;width:100%;border:2px solid var(--gold);color:var(--gold);text-align:center;padding:.82rem 1rem;border-radius:8px;font-weight:700;font-size:.93rem;background:transparent;cursor:pointer;transition:background .2s,color .2s;}
+.btn-outline:hover{background:var(--gold);color:#fff;}
+
+/* FAQ */
+.faq{background:#fff;}
+.faq-list{margin-top:2.5rem;display:flex;flex-direction:column;gap:0;max-width:720px;}
+.faq-item{border-bottom:1px solid var(--border);}
+.faq-q{width:100%;text-align:left;background:none;border:none;padding:1.2rem 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-family:var(--serif);font-size:1.03rem;color:var(--navy);font-weight:600;}
+.faq-q .arr{font-size:1.2rem;color:var(--gold);transition:transform .25s;flex-shrink:0;margin-left:1rem;}
+.faq-q.open .arr{transform:rotate(45deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s;font-size:.9rem;color:var(--muted);}
+.faq-a.open{max-height:320px;padding-bottom:1.2rem;}
+
+/* LEAD */
+.lead{background:var(--navy);padding:5rem 1.5rem;text-align:center;}
+.lead h2{font-family:var(--serif);font-size:clamp(1.75rem,3vw,2.5rem);color:#fff;margin-bottom:.7rem;}
+.lead h2 em{color:var(--gold-lt);font-style:italic;}
+.lead-sub{color:rgba(255,255,255,.55);margin-bottom:1.85rem;font-weight:300;font-size:.97rem;}
+.lead-sub strong{color:rgba(255,255,255,.8);}
+.lead-form{display:flex;gap:.7rem;max-width:460px;margin:0 auto;flex-wrap:wrap;justify-content:center;}
+.lead-form input{flex:1;min-width:210px;padding:.82rem 1.1rem;border-radius:8px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.08);color:#fff;font-size:.93rem;font-family:var(--sans);outline:none;transition:border-color .2s;}
+.lead-form input::placeholder{color:rgba(255,255,255,.32);}
+.lead-form input:focus{border-color:var(--gold-lt);}
+.lead-form button{background:var(--gold);color:#fff;padding:.82rem 1.65rem;border:none;border-radius:8px;font-weight:700;font-size:.93rem;cursor:pointer;transition:background .2s;font-family:var(--sans);}
+.lead-form button:hover{background:var(--gold-lt);}
+.lead-note{font-size:.73rem;color:rgba(255,255,255,.28);margin-top:.8rem;}
+.lead-ok{display:none;color:var(--gold-lt);font-family:var(--serif);font-size:1.15rem;margin-top:.75rem;}
+
+/* FOOTER */
+footer{background:#111c28;padding:3rem 1.5rem 2rem;}
+.foot-in{max-width:1080px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:2rem;margin-bottom:2rem;color:rgba(255,255,255,.4);}
+.foot-brand .logo{font-family:var(--serif);font-size:1.05rem;color:#fff;margin-bottom:.45rem;}
+.foot-brand p{font-size:.78rem;max-width:260px;line-height:1.65;}
+.foot-col h5{color:#fff;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.7rem;}
+.foot-col ul{list-style:none;display:flex;flex-direction:column;gap:.38rem;}
+.foot-col ul a{font-size:.8rem;color:rgba(255,255,255,.4);transition:color .2s;}
+.foot-col ul a:hover{color:var(--gold-lt);}
+.disclaimer{max-width:1080px;margin:0 auto 0;padding:1rem 1.2rem;background:rgba(255,255,255,.04);border-radius:6px;font-size:.73rem;line-height:1.65;color:rgba(255,255,255,.28);}
+.foot-bottom{max-width:1080px;margin:1.25rem auto 0;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.07);font-size:.73rem;color:rgba(255,255,255,.28);display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;}
+
+/* FADE IN */
+.fi{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease;}
+.fi.vis{opacity:1;transform:translateY(0);}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero-in,.compare-grid,.fund-grid,.price-grid{grid-template-columns:1fr;}
+  .pain-grid{grid-template-columns:1fr;}
+  .doc-grid{grid-template-columns:repeat(2,1fr);}
+  .nav-links{display:none;}
+  .strip-in{gap:1.2rem;}
+  .stats-row{gap:2rem;}
+  .foot-in{flex-direction:column;}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">🛡️ Attorney-reviewed · Indiana-specific · No attorney required by law</div>
+
+<nav>
+  <div class="nav-in">
+    <div class="nav-logo">Michiana Trust Planning<span>Indiana Estate Planning Documents</span></div>
+    <ul class="nav-links">
+      <li><a href="#why">Why a Trust</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#documents">Documents</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#pricing" class="nav-cta">Get Started →</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-in">
+    <div>
+      <div class="hero-badge">✓ Attorney-Reviewed · Indiana-Specific Documents</div>
+      <h1>Protect your family.<br>Skip the <em>$2,400</em><br>attorney bill.</h1>
+      <p class="hero-desc">Indiana doesn't require an attorney to create a revocable living trust. We give you 7 attorney-reviewed documents, plain-English guidance, and a step-by-step funding guide — so your trust actually works.</p>
+      <ul class="hero-proof">
+        <li>No attorney required in Indiana</li>
+        <li>7 complete, signed-ready documents</li>
+        <li>Avoid probate — stay private</li>
+        <li>Funding guide included (most services skip this)</li>
+      </ul>
+    </div>
+    <div>
+      <div class="hero-card">
+        <div class="hc-badge">⭐ Most Popular — Complete Bundle</div>
+        <div class="hc-title">Indiana Trust Bundle</div>
+        <div class="hc-price">
+          <div class="amt">$199</div>
+          <div><span class="compare">$1,500–$3,000 with an attorney</span></div>
+          <div class="sub">One-time payment · No subscription</div>
+        </div>
+        <ul class="doc-list">
+          <li>Revocable Living Trust</li>
+          <li>Pour-Over Will</li>
+          <li>Certificate of Trust</li>
+          <li>Durable Financial Power of Attorney</li>
+          <li>Health Care Representative + Living Will</li>
+          <li>Assignment of Personal Property</li>
+          <li>Quitclaim Deed to Trust</li>
+        </ul>
+        <a href="#pricing" class="btn-gold">Get My Documents →</a>
+        <p class="hc-foot">🔒 Secure Stripe checkout · Documents delivered in minutes · 30-day guarantee</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="strip-in">
+    <div class="strip-item">⚖️ Attorney-reviewed templates</div>
+    <div class="strip-item">📍 Indiana-specific documents</div>
+    <div class="strip-item">⚡ Delivered in minutes</div>
+    <div class="strip-item">🔒 Secure Stripe checkout</div>
+    <div class="strip-item">🛡️ 30-day guarantee</div>
+  </div>
+</div>
+
+<!-- PAIN -->
+<section class="pain fi" id="why">
+  <div class="wrap">
+    <div class="eyebrow">Why Most People Never Do This</div>
+    <h2 class="sec-title">We know why you've been <em>putting this off.</em></h2>
+    <p class="sec-desc">Most Indiana families face the same three barriers. Michiana Trust Planning was built to remove all three.</p>
+    <div class="pain-grid">
+      <div class="pain-card fi">
+        <div class="icon">😰</div>
+        <h3>"It sounds too complicated."</h3>
+        <p>Estate planning documents are written for attorneys, not families. Our guided intake walks you through every question in plain English — no legal training required. We ask the questions, you answer them, we generate the documents.</p>
+      </div>
+      <div class="pain-card fi">
+        <div class="icon">💸</div>
+        <h3>"A lawyer wants $2,000+."</h3>
+        <p>Indiana law does not require an attorney to create a revocable living trust. The average Indiana estate planning attorney charges $1,500–$3,000 for the same documents you'll receive here — attorney-reviewed — for $199.</p>
+      </div>
+      <div class="pain-card fi">
+        <div class="icon">📦</div>
+        <h3>"People sign and never fund."</h3>
+        <p>An unfunded trust does not avoid probate. Period. Signing documents is only part of the plan. That's why every bundle includes our step-by-step Asset Funding Guide — the checklist most services skip entirely.</p>
+        <p class="source">From our attorney's guide: "A well-drafted but unfunded trust can still leave assets exposed to probate."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPLAINER -->
+<section class="explainer fi" id="what-is-a-trust">
+  <div class="wrap">
+    <div class="eyebrow">Education First</div>
+    <h2 class="sec-title">What a revocable living trust <em>actually does</em></h2>
+    <p class="sec-desc">A trust is a legal management structure — not just a document. It controls how your assets are managed during your life, during incapacity, and after death. When funded properly, it keeps your family out of probate court.</p>
+    <div class="compare-grid">
+      <div class="compare-box bad">
+        <h4>❌ Without a Trust</h4>
+        <ul>
+          <li><span>✗</span>Estate goes through Indiana probate court — public, slow, and expensive</li>
+          <li><span>✗</span>Can take 12–24 months before family receives anything</li>
+          <li><span>✗</span>Probate fees and court costs can consume 3–7% of your estate</li>
+          <li><span>✗</span>Your will becomes public record — anyone can read it</li>
+          <li><span>✗</span>A judge may decide how assets are distributed if documents conflict</li>
+          <li><span>✗</span>Incapacity can trigger guardianship proceedings, which are costly and public</li>
+        </ul>
+      </div>
+      <div class="compare-box good">
+        <h4>✅ With a Funded Revocable Living Trust</h4>
+        <ul>
+          <li><span>✓</span>Assets transfer directly to beneficiaries — no court required</li>
+          <li><span>✓</span>Settlement often complete in weeks, not months</li>
+          <li><span>✓</span>Completely private — never becomes public record</li>
+          <li><span>✓</span>You stay in full control during your lifetime</li>
+          <li><span>✓</span>Successor trustee steps in without court involvement if you're incapacitated</li>
+          <li><span>✓</span>You can amend, update, or revoke the trust at any time</li>
+        </ul>
+      </div>
+    </div>
+    <div class="stats-row">
+      <div class="big-stat"><span class="v">60%</span><span class="l">of Americans have no estate plan</span></div>
+      <div class="big-stat"><span class="v">$2,400</span><span class="l">Average Indiana attorney fee</span></div>
+      <div class="big-stat"><span class="v">18 mo.</span><span class="l">Average Indiana probate timeline</span></div>
+      <div class="big-stat"><span class="v">$199</span><span class="l">Michiana Trust Planning</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how fi" id="how">
+  <div class="wrap">
+    <div class="eyebrow">Simple Process</div>
+    <h2 class="sec-title">From start to <em>signed documents</em> in one afternoon.</h2>
+    <p class="sec-desc">Designed so any Indiana family can complete it — no legal background, no confusing jargon.</p>
+    <div class="steps">
+      <div class="step fi">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Choose your package and pay securely</h3>
+          <p>Select the bundle that fits your situation. Checkout is handled by Stripe. Your card information never touches our servers. Payment unlocks your personal intake form.</p>
+          <span class="step-time">⏱ 2 minutes</span>
+        </div>
+      </div>
+      <div class="step fi">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Complete your personal intake form</h3>
+          <p>Answer straightforward questions about yourself, your family, your assets, your trustees, and your wishes. Written in plain English. Questions that don't apply to your situation are automatically skipped.</p>
+          <span class="step-time">⏱ 15–25 minutes</span>
+        </div>
+      </div>
+      <div class="step fi">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Receive your complete document bundle</h3>
+          <p>Your answers are merged into our attorney-reviewed Indiana templates and a complete PDF bundle is delivered to your inbox — typically within minutes. Every blank filled. Every signature line clearly marked.</p>
+          <span class="step-time">⏱ Under 5 minutes after submission</span>
+        </div>
+      </div>
+      <div class="step fi">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Sign, notarize, and fund your trust</h3>
+          <p>Your Indiana Notarization Checklist walks through exactly how to execute each document — witnesses, notarization requirements, and signing order. Then your Asset Funding Guide shows you how to actually move your real estate, bank accounts, and other assets into the trust — the critical step most families skip.</p>
+          <span class="step-time">⏱ 1–2 hours to complete</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCUMENTS -->
+<section class="docs fi" id="documents">
+  <div class="wrap">
+    <div class="eyebrow">What You Receive</div>
+    <h2 class="sec-title">7 attorney-reviewed documents. <em>Everything you need.</em></h2>
+    <p class="sec-desc">Your Indiana estate plan includes documents that work together as a system. Each one has a specific role.</p>
+    <div class="doc-grid">
+      <div class="doc-card fi">
+        <div class="emoji">📜</div>
+        <h4>Revocable Living Trust</h4>
+        <p>The main management document. Controls asset management during your lifetime, during incapacity, and at death. Avoids probate when funded.</p>
+      </div>
+      <div class="doc-card fi">
+        <div class="emoji">📋</div>
+        <h4>Pour-Over Will</h4>
+        <p>The safety net. If an asset is outside the trust at death, this will directs it into the trust. Also nominates guardians for minor children.</p>
+      </div>
+      <div class="doc-card fi">
+        <div class="emoji">🏦</div>
+        <h4>Certificate of Trust</h4>
+        <p>A short verification document for banks and institutions. Confirms your trust and trustee authority without disclosing private distribution terms.</p>
+      </div>
+      <div class="doc-card fi">
+        <div class="emoji">✍️</div>
+        <h4>Durable Financial POA</h4>
+        <p>Appoints an agent to handle your financial matters if you're incapacitated. Includes authority to fund or amend your trust under Indiana Code 30-5.</p>
+      </div>
+      <div class="doc-card fi">
+        <div class="emoji">🏥</div>
+        <h4>Health Care Rep + Living Will</h4>
+        <p>Covers medical decisions and end-of-life instructions. Ensures your healthcare preferences are followed if you can't communicate them.</p>
+      </div>
+      <div class="doc-card fi">
+        <div class="emoji">🛋️</div>
+        <h4>Assignment of Personal Property</h4>
+        <p>Transfers your household goods, furniture, jewelry, collectibles, and other tangible personal property into the trust.</p>
+      </div>
+      <div class="doc-card fi">
+        <div class="emoji">🏠</div>
+        <h4>Quitclaim Deed to Trust</h4>
+        <p>Retitles your Indiana real estate into the trust. If property is not retitled, it may still require probate — this document prevents that.</p>
+      </div>
+    </div>
+    <div class="doc-note">
+      <span>⚠️</span>
+      <div><strong>Important:</strong> These documents work as a system — not independently. The trust establishes authority, the companion documents extend it, and the funding instruments make it operational. Every bundle includes guidance on how they fit together.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FUNDING — Your key differentiator -->
+<section class="funding fi" id="funding">
+  <div class="wrap">
+    <div class="eyebrow">The Step Everyone Skips</div>
+    <h2 class="sec-title">Signing is only half the job. <em>Funding makes it work.</em></h2>
+    <p class="sec-desc">Most online services hand you documents and walk away. We don't. An unfunded trust provides none of the probate-avoidance benefits you're paying for. That's why we include a complete post-signing funding guide.</p>
+    <div class="fund-grid">
+      <div class="fund-box">
+        <h4>Your Post-Signing Funding Checklist</h4>
+        <ul class="fund-steps">
+          <li><span class="num">1</span>Confirm your complete signed document set</li>
+          <li><span class="num">2</span>Build your asset funding checklist (real estate, accounts, investments)</li>
+          <li><span class="num">3</span>Transfer real estate using the Quitclaim Deed — recorded with your county</li>
+          <li><span class="num">4</span>Retitle bank and brokerage accounts using your Certificate of Trust</li>
+          <li><span class="num">5</span>Review beneficiary designations on retirement accounts and life insurance</li>
+          <li><span class="num">6</span>Confirm personal property and business interests assigned to trust</li>
+          <li><span class="num">7</span>Build a funding proof file with copies of all confirmations</li>
+          <li><span class="num">8</span>Schedule annual maintenance reviews</li>
+        </ul>
+      </div>
+      <div class="fund-box">
+        <h4>Common Funding Mistakes to Avoid</h4>
+        <ul class="mistake-list">
+          <li>Assuming signing alone avoids probate — it doesn't</li>
+          <li>Forgetting to record real estate deeds with your Indiana county</li>
+          <li>Leaving newly opened accounts outside trust ownership</li>
+          <li>Failing to update beneficiary designations on retirement accounts after life changes</li>
+          <li>Not keeping documentation of completed transfers</li>
+          <li>Creating the trust but never moving assets into it</li>
+        </ul>
+        <div style="margin-top:1.5rem;padding:1.1rem;background:rgba(184,134,42,.12);border:1px solid rgba(184,134,42,.25);border-radius:8px;">
+          <p style="font-size:.84rem;color:rgba(255,255,255,.75);font-style:italic;">"A trust plan is a system. The legal documents create authority, and funding makes that authority operational."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing fi" id="pricing">
+  <div class="wrap">
+    <div class="eyebrow">Simple Pricing</div>
+    <h2 class="sec-title">One price. <em>Everything included.</em></h2>
+    <p class="sec-desc">No subscription. No hidden fees. You pay once — your documents are yours forever.</p>
+    <div class="price-grid">
+      <div class="price-card fi">
+        <h3>Basic Trust</h3>
+        <div class="price-amt">$99</div>
+        <div class="price-sub">Core trust documents · Single person</div>
+        <ul class="feat-list">
+          <li class="feat-item">Revocable Living Trust</li>
+          <li class="feat-item">Pour-Over Will</li>
+          <li class="feat-item">Certificate of Trust</li>
+          <li class="feat-item">Indiana Notarization Checklist</li>
+          <li class="feat-item no">Durable Financial POA</li>
+          <li class="feat-item no">Health Care Rep + Living Will</li>
+          <li class="feat-item no">Assignment of Personal Property</li>
+          <li class="feat-item no">Quitclaim Deed to Trust</li>
+          <li class="feat-item no">Asset Funding Guide</li>
+        </ul>
+        <a href="#" class="btn-outline">Get Basic →</a>
+      </div>
+      <div class="price-card feat fi">
+        <div class="pop-badge">⭐ Most Popular</div>
+        <h3>Complete Bundle</h3>
+        <div class="price-amt">$199</div>
+        <div class="price-sub">All 7 documents · Full funding guidance</div>
+        <ul class="feat-list">
+          <li class="feat-item">All 7 attorney-reviewed documents</li>
+          <li class="feat-item">Revocable Living Trust</li>
+          <li class="feat-item">Pour-Over Will + Guardianship</li>
+          <li class="feat-item">Durable Financial POA</li>
+          <li class="feat-item">Health Care Rep + Living Will</li>
+          <li class="feat-item">Assignment of Personal Property</li>
+          <li class="feat-item">Quitclaim Deed to Trust</li>
+          <li class="feat-item">Complete Asset Funding Guide</li>
+        </ul>
+        <a href="#" class="btn-gold">Get Complete Bundle →</a>
+      </div>
+      <div class="price-card fi">
+        <h3>Bundle + Amendments</h3>
+        <div class="price-amt">$299</div>
+        <div class="price-sub">Complete bundle + 2 years of updates</div>
+        <ul class="feat-list">
+          <li class="feat-item">Everything in Complete Bundle</li>
+          <li class="feat-item">Unlimited trust amendments (2 yrs)</li>
+          <li class="feat-item">New asset additions</li>
+          <li class="feat-item">Beneficiary updates</li>
+          <li class="feat-item">Priority email support</li>
+          <li class="feat-item">Annual review reminder</li>
+        </ul>
+        <a href="#" class="btn-outline">Get Bundle + Amendments →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq fi" id="faq">
+  <div class="wrap-sm">
+    <div class="eyebrow">Common Questions</div>
+    <h2 class="sec-title">Answers to what you're <em>actually wondering.</em></h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="faq(this)">Is this legal in Indiana? <span class="arr">+</span></button>
+        <div class="faq-a">Yes. Indiana does not require an attorney to create a revocable living trust. Indiana law permits individuals to prepare and execute their own estate planning documents. Our templates were drafted and reviewed by a licensed Indiana estate attorney to comply with Indiana law, including the Indiana Trust Code (IC 30-4) and related statutes.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="faq(this)">What's the difference between a will and a living trust? <span class="arr">+</span></button>
+        <div class="faq-a">A will only takes effect after death and must go through Indiana probate court — a public, slow, and often expensive process. A revocable living trust takes effect immediately, allows your assets to transfer privately and directly to beneficiaries without court involvement, and lets you stay in complete control during your lifetime. Most Indiana estate planning attorneys recommend a trust-based plan over a will-only plan for families with any significant assets or real estate.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="faq(this)">What does "funding" the trust mean — and why is it so important? <span class="arr">+</span></button>
+        <div class="faq-a">Funding means transferring ownership of your assets into the trust — retitling your home, bank accounts, and investment accounts so the trust owns them. A signed trust that holds no assets provides none of the probate-avoidance benefits. This is the number one mistake families make. Every Michiana Trust Planning bundle includes a complete Indiana Asset Funding Guide with step-by-step instructions for each type of asset.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="faq(this)">Do I need to record the Quitclaim Deed — and how? <span class="arr">+</span></button>
+        <div class="faq-a">Yes. To transfer Indiana real estate into your trust, the Quitclaim Deed must be recorded with the recorder's office in the county where the property is located. Recording requirements vary by Indiana county. Your funding guide includes instructions for this step. The transfer is exempt from Indiana transfer tax because it's a transfer to a revocable trust in which you retain a beneficial interest (Indiana Code 6-2.1-3-3).</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="faq(this)">Can I change the trust after I create it? <span class="arr">+</span></button>
+        <div class="faq-a">Yes — that's what "revocable" means. You can amend, update, or revoke your trust at any time during your lifetime while you have capacity. The trust becomes irrevocable only upon the death of the surviving settlor. The Bundle + Amendments plan includes two years of unlimited trust amendments.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="faq(this)">What if my situation is complicated? <span class="arr">+</span></button>
+        <div class="faq-a">Michiana Trust Planning works well for most Indiana families with straightforward estate planning needs. If your situation involves business ownership with complex operating agreements, special needs beneficiaries, significant out-of-state real estate, or advanced tax planning, we recommend consulting a licensed Indiana estate attorney. We're transparent about what we are — a document preparation service, not a law firm.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="faq(this)">How do I get the documents notarized in Indiana? <span class="arr">+</span></button>
+        <div class="faq-a">Every bundle includes an Indiana-specific Notarization Checklist explaining which documents require notarization, how many witnesses are needed, and the correct signing order. Notary services are available at most UPS stores, banks, credit unions, and public libraries. Indiana also permits remote online notarization (RON), which means you can notarize documents from home.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- LEAD CAPTURE -->
+<section class="lead fi" id="waitlist">
+  <div class="wrap-sm">
+    <h2>Not ready yet? <em>Start with the free guide.</em></h2>
+    <p class="lead-sub">Get our free guide: <strong>"5 Things Every Indiana Family Should Know Before Creating a Trust"</strong> — delivered to your inbox, no strings attached.</p>
+    <div class="lead-form" id="lf">
+      <input type="email" id="em" placeholder="your@email.com" />
+      <button onclick="sub()">Send Me the Guide →</button>
+    </div>
+    <div class="lead-ok" id="lok">✓ Check your inbox — your guide is on the way!</div>
+    <p class="lead-note">No spam. Unsubscribe anytime.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-in">
+    <div class="foot-brand">
+      <div class="logo">Michiana Trust Planning</div>
+      <p>Helping Indiana families protect what they've built — without the attorney fees.</p>
+    </div>
+    <div class="foot-col">
+      <h5>Product</h5>
+      <ul>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#documents">Documents</a></li>
+        <li><a href="#funding">Funding Guide</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h5>Learn</h5>
+      <ul>
+        <li><a href="#what-is-a-trust">What Is a Living Trust?</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#waitlist">Free Guide</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h5>Legal</h5>
+      <ul>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Disclaimer</a></li>
+        <li><a href="mailto:hello@michianatrustplanning.com">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="disclaimer">
+    <strong>Legal Disclaimer:</strong> Michiana Trust Planning is a document preparation service only. We are not a law firm and do not provide legal advice. All templates have been reviewed by a licensed Indiana estate attorney. Indiana law does not require an attorney to create a revocable living trust. By using this service, you acknowledge you are purchasing document preparation services only, not legal counsel. If your situation is complex, consult a licensed Indiana estate attorney.
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 Michiana Trust Planning · michianatrustplanning.com</span>
+    <span>Indiana &amp; Michigan Estate Planning Documents</span>
+  </div>
+</footer>
+
+<script>
+function faq(btn){
+  const a=btn.nextElementSibling,open=btn.classList.contains('open');
+  document.querySelectorAll('.faq-q.open').forEach(b=>{b.classList.remove('open');b.nextElementSibling.classList.remove('open');});
+  if(!open){btn.classList.add('open');a.classList.add('open');}
+}
+function sub(){
+  const v=document.getElementById('em').value;
+  if(!v||!v.includes('@')){document.getElementById('em').style.borderColor='#e87d6e';return;}
+  document.getElementById('lf').style.display='none';
+  document.getElementById('lok').style.display='block';
+  // TODO: POST to Mailchimp/Zapier webhook
+}
+document.getElementById('em').addEventListener('keydown',e=>{if(e.key==='Enter')sub();});
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis');}),{threshold:.07});
+document.querySelectorAll('.fi').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
