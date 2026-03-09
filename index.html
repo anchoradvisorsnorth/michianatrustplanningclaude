@@ -992,42 +992,29 @@ function faq(btn) {
 // ── CHECKLIST SIGNUP ──
 async function clSub() {
   const emailEl = document.getElementById('cl-em');
-  const btn = document.getElementById('cl-btn');
-  const v = emailEl.value.trim();
-  if (!v || !v.includes('@')) {
-    emailEl.style.borderColor = '#e87d6e';
-    emailEl.focus();
-    return;
-  }
+  const btn     = document.getElementById('cl-btn');
+  const v       = emailEl.value.trim();
+  if (!v || !v.includes('@')) { emailEl.style.borderColor='#e87d6e'; emailEl.focus(); return; }
   emailEl.style.borderColor = '';
   btn.disabled = true;
   btn.textContent = 'Sending...';
   try {
-    const res = await fetch('https://connect.mailerlite.com/api/subscribers', {
+    const res = await fetch('/api/subscribe', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-        'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiMTBmNjVmMDA5NGM4YWZjYzJiZjQ0NWQ1NjE5YmE5YWQxMGRjYTJiYjExMGQyNzlkMGI2OWRiOTk4NDU1N2RjNjIxN2UyNWVjZTc0YzQ0OTkiLCJpYXQiOjE3NzMwMTI4NjAuODk5OTI1LCJuYmYiOjE3NzMwMTI4NjAuODk5OTI3LCJleHAiOjQ5Mjg2ODY0NjAuODkzMTU0LCJzdWIiOiIyMTkyMzQ2Iiwic2NvcGVzIjpbXX0.d2han2vgGSOM4PQElk2-JlmdZ0EABPP5_cuw7nKJeEDqZhX-x0pSpq6zj5qnwgKWAb4pk0XMLRgBO2CCKIr5xIm1zH60P5_CEc1FIvhJodgv9_YCYMjHGjxBX-R4RhB3jzwgZ4jeEMHCi7DEZjDS-oKjz1_mNbgCE39Af9u4KmXAN7UB5PJWy0sJ0JiBYBF-IbBIiyt_2_foJYRKPupmIauq7bPseRH5s6jA0EparULytCMtujQTAe19II5T0gp020QD3W3ayJfnfhYS6-dezWrzNV4IZ5QCukOIHvo7JJ_65aKp-8xkVDxOzBBp-Vo1zPuw_t6iew2SaNnWqppG_n5k08RIGb_XC3TfPHatEa4q3JlpQcObCbSsLpVSaGQF0PUYvEkkhm8GAAcmt1iZ2kDvKRCsrorYMpONqne95CIbRKLRcRuPlgFphdBpi5wv1yBYdIlvHyb_VbNjwqShqG6u5kv0Ta6JOQASnZEY9-N-WrjV5uLXH5fGWpOqZ1SoPMRjHWzNkhnOwyUt80ckBQ-MnedsHlyUgbHc87XMCWgK1KBrd8L_5gs2hNzogPRnkm0MSYiEUv6dfFye0CtEavlyvj0-AoGgFU2of7bNFsIguc3q15ijKUWZI1osyFtMbW_f5bme12E33kDWCmh_dYZ7h60M4aXWgjZ9MucBZFo'
-      },
-      body: JSON.stringify({
-        email: v,
-        groups: ['181416920771200399']
-      })
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: v })
     });
-    if (res.ok || res.status === 200 || res.status === 201) {
+    if (res.ok) {
       document.getElementById('checklist-form').style.display = 'none';
-      document.getElementById('checklist-ok').style.display = 'block';
-    } else {
-      throw new Error('API error');
-    }
-  } catch(e) {
+      document.getElementById('checklist-ok').style.display  = 'block';
+    } else { throw new Error(); }
+  } catch {
     btn.disabled = false;
     btn.textContent = 'Send Me the Checklist →';
     emailEl.style.borderColor = '#e87d6e';
   }
 }
-document.getElementById('cl-em').addEventListener('keydown', e => { if (e.key === 'Enter') clSub(); });
+document.getElementById('cl-em').addEventListener('keydown', e => { if (e.key==='Enter') clSub(); });
 </script>
 </body>
 </html>
