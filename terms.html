@@ -3,66 +3,53 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms of Service — Michiana Trust Planning</title>
+<title>Terms of Service - Michiana Trust Planning</title>
 <meta name="description" content="Terms of Service for Michiana Trust Planning document preparation services.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --navy:   #1b2a3b;
-  --navy2:  #243447;
-  --cream:  #f8f4ee;
-  --gold:   #b8862a;
-  --gold-lt:#d4a84b;
-  --gold-bg:rgba(184,134,42,.08);
-  --gold-br:rgba(184,134,42,.25);
-  --muted:  #6b7280;
+  --navy: #1b2a3b;
+  --navy2: #243447;
+  --cream: #f8f4ee;
+  --gold: #b8862a;
+  --gold-lt: #d4a84b;
+  --gold-bg: rgba(184,134,42,.08);
+  --gold-br: rgba(184,134,42,.25);
+  --muted: #6b7280;
   --border: rgba(27,42,59,.1);
-  --text:   #2c3e50;
-  --white:  #ffffff;
-  --serif:  'Playfair Display', Georgia, serif;
-  --sans:   'Lato', sans-serif;
-  --shadow: 0 4px 24px rgba(27,42,59,.07);
+  --text: #2c3e50;
+  --white: #ffffff;
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans: 'Lato', sans-serif;
 }
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{font-family:var(--sans);background:var(--cream);color:var(--text);line-height:1.75;-webkit-font-smoothing:antialiased;}
 a{color:var(--gold);text-decoration:none;}
 a:hover{text-decoration:underline;}
-
-/* NAV */
 nav{background:var(--navy);padding:0 2rem;border-bottom:2px solid var(--gold);}
 .nav-in{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px;}
 .nav-logo{font-family:var(--serif);color:#fff;font-size:1.05rem;line-height:1.2;}
 .nav-logo span{color:var(--gold-lt);display:block;font-size:.66rem;font-family:var(--sans);letter-spacing:.14em;text-transform:uppercase;font-weight:300;}
 .nav-back{color:rgba(255,255,255,.6);font-size:.83rem;transition:color .2s;}
 .nav-back:hover{color:var(--gold-lt);text-decoration:none;}
-.nav-back::before{content:'← ';}
-
-/* HERO */
+.nav-back::before{content:'<- ';}
 .page-hero{background:var(--navy);padding:3.5rem 2rem 3rem;text-align:center;}
 .page-hero .eyebrow{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-lt);font-weight:700;margin-bottom:.6rem;}
 .page-hero h1{font-family:var(--serif);font-size:2.4rem;color:#fff;margin-bottom:.6rem;}
 .page-hero .meta{font-size:.82rem;color:rgba(255,255,255,.4);}
-
-/* DISCLAIMER BOX */
 .disclaimer-box{max-width:800px;margin:2.5rem auto 0;background:var(--gold-bg);border:1px solid var(--gold-br);border-radius:10px;padding:1.25rem 1.5rem;display:flex;gap:.85rem;align-items:flex-start;}
 .disclaimer-box .icon{font-size:1.3rem;flex-shrink:0;}
 .disclaimer-box p{font-size:.88rem;color:var(--navy);line-height:1.65;}
 .disclaimer-box strong{color:var(--gold);}
-
-/* LAYOUT */
 .page-body{max-width:800px;margin:3rem auto 5rem;padding:0 1.5rem;display:grid;grid-template-columns:200px 1fr;gap:3rem;align-items:start;}
 @media(max-width:720px){.page-body{grid-template-columns:1fr;}.toc{display:none;}}
-
-/* TOC */
 .toc{position:sticky;top:80px;}
 .toc h3{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:.85rem;}
 .toc ul{list-style:none;display:flex;flex-direction:column;gap:.3rem;}
 .toc ul a{font-size:.8rem;color:var(--muted);display:block;padding:.2rem 0;transition:color .2s;border-left:2px solid transparent;padding-left:.65rem;}
 .toc ul a:hover{color:var(--gold);text-decoration:none;border-left-color:var(--gold);}
-
-/* CONTENT */
 .tos-content{min-width:0;}
 .tos-section{margin-bottom:2.75rem;padding-bottom:2.75rem;border-bottom:1px solid var(--border);}
 .tos-section:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
@@ -73,13 +60,8 @@ nav{background:var(--navy);padding:0 2rem;border-bottom:2px solid var(--gold);}
 .tos-section ul{padding-left:1.4rem;margin-bottom:.85rem;display:flex;flex-direction:column;gap:.4rem;}
 .tos-section ul li{font-size:.91rem;color:var(--text);}
 .tos-section strong{color:var(--navy);}
-
-/* HIGHLIGHT */
 .hl{background:var(--gold-bg);border-left:3px solid var(--gold);border-radius:0 6px 6px 0;padding:.85rem 1.1rem;margin:.75rem 0;font-size:.9rem;}
 .hl.red{background:rgba(192,57,43,.07);border-left-color:#c0392b;}
-.hl strong{color:var(--navy);}
-
-/* FOOTER */
 footer{background:var(--navy2);padding:1.75rem 2rem;text-align:center;border-top:1px solid rgba(255,255,255,.06);}
 .foot-links{display:flex;justify-content:center;gap:2rem;margin-bottom:.75rem;flex-wrap:wrap;}
 .foot-links a{font-size:.8rem;color:rgba(255,255,255,.45);transition:color .2s;}
@@ -88,7 +70,6 @@ footer p{font-size:.75rem;color:rgba(255,255,255,.25);}
 </style>
 </head>
 <body>
-
 <nav>
   <div class="nav-in">
     <div class="nav-logo">Michiana Trust Planning<span>Indiana Estate Planning Documents</span></div>
@@ -99,22 +80,20 @@ footer p{font-size:.75rem;color:rgba(255,255,255,.25);}
 <div class="page-hero">
   <div class="eyebrow">Legal</div>
   <h1>Terms of Service</h1>
-  <p class="meta">Effective Date: January 1, 2026 &nbsp;·&nbsp; Last Updated: January 1, 2026</p>
+  <p class="meta">Effective Date: January 1, 2026 · Last Updated: January 1, 2026</p>
 
   <div class="disclaimer-box">
-    <div class="icon">⚠️</div>
+    <div class="icon">!</div>
     <p><strong>Important:</strong> Michiana Trust Planning is a document preparation service only. We are not a law firm and do not provide legal advice. Please read these terms carefully before purchasing or using our services.</p>
   </div>
 </div>
 
 <div class="page-body">
-
-  <!-- TOC -->
   <aside class="toc">
     <h3>Contents</h3>
     <ul>
       <li><a href="#s1">1. Who We Are</a></li>
-      <li><a href="#s2">2. Not Legal Advice</a></li>
+      <li><a href="#disclaimer">2. Not Legal Advice</a></li>
       <li><a href="#s3">3. Eligibility</a></li>
       <li><a href="#s4">4. Services</a></li>
       <li><a href="#s5">5. Payments & Refunds</a></li>
@@ -130,27 +109,25 @@ footer p{font-size:.75rem;color:rgba(255,255,255,.25);}
     </ul>
   </aside>
 
-  <!-- CONTENT -->
   <article class="tos-content">
-
     <div class="tos-section" id="s1">
       <h2><span class="num">1</span>Who We Are</h2>
       <p>Michiana Trust Planning ("Company," "we," "us," or "our") operates the website michianatrustplanning.com and provides document preparation services for Indiana residents seeking to establish a revocable living trust and related estate planning documents.</p>
       <p>By accessing our website or purchasing our services, you ("User," "you," or "your") agree to be bound by these Terms of Service. If you do not agree, do not use our services.</p>
     </div>
 
-    <div class="tos-section" id="s2">
-      <h2><span class="num">2</span>Not Legal Advice — Please Read Carefully</h2>
+    <div class="tos-section" id="disclaimer">
+      <h2><span class="num">2</span>Not Legal Advice - Please Read Carefully</h2>
       <div class="hl red">
         <strong>Michiana Trust Planning is a document preparation service. We are not a law firm. We do not provide legal advice, legal representation, or legal counsel of any kind.</strong>
       </div>
       <p>The documents we prepare are based on templates that have been reviewed by a licensed Indiana estate attorney for general compliance with Indiana law. However:</p>
       <ul>
-        <li>We do not review your individual legal situation</li>
-        <li>We do not advise you on whether a revocable living trust is appropriate for your circumstances</li>
-        <li>We do not provide tax advice or guidance on estate tax planning</li>
-        <li>We do not represent you before any court, agency, or institution</li>
-        <li>No attorney-client relationship is created by your use of our services</li>
+        <li>We do not review your individual legal situation.</li>
+        <li>We do not advise you on whether a revocable living trust is appropriate for your circumstances.</li>
+        <li>We do not provide tax advice or guidance on estate tax planning.</li>
+        <li>We do not represent you before any court, agency, or institution.</li>
+        <li>No attorney-client relationship is created by your use of our services.</li>
       </ul>
       <p>Indiana law permits individuals to prepare and execute their own revocable living trust documents without attorney involvement. Our service helps you prepare those documents based on information you provide.</p>
       <div class="hl">
@@ -160,132 +137,76 @@ footer p{font-size:.75rem;color:rgba(255,255,255,.25);}
 
     <div class="tos-section" id="s3">
       <h2><span class="num">3</span>Eligibility</h2>
-      <p>To use our services, you must:</p>
-      <ul>
-        <li>Be at least 18 years of age</li>
-        <li>Be a resident of Indiana or be creating a trust to be governed by Indiana law</li>
-        <li>Have legal capacity to enter into contracts under Indiana law</li>
-        <li>Provide accurate and complete information in our intake form</li>
-      </ul>
-      <p>Our document templates are designed specifically for Indiana. If you reside in another state, our documents may not comply with your state's laws. Do not use our service for estate planning in states other than Indiana without consulting a licensed attorney in your state.</p>
+      <p>To use our services, you must be at least 18 years old, have legal capacity to contract under Indiana law, and provide accurate and complete information.</p>
+      <p>Our materials are designed specifically for Indiana residents and Indiana-governed planning. If another state's law applies to your situation, consult a licensed attorney in that jurisdiction before using our service.</p>
     </div>
 
     <div class="tos-section" id="s4">
       <h2><span class="num">4</span>Description of Services</h2>
-      <p>Michiana Trust Planning provides automated document preparation services. After you complete our intake questionnaire and submit payment, we generate personalized estate planning documents based on your responses. Depending on the package purchased, documents may include:</p>
-      <ul>
-        <li>Indiana Revocable Living Trust</li>
-        <li>Pour-Over Will</li>
-        <li>Certificate of Trust</li>
-        <li>Durable Financial Power of Attorney</li>
-        <li>Health Care Representative Designation and Living Will</li>
-        <li>Assignment of Personal Property</li>
-        <li>Quitclaim Deed to Trust</li>
-      </ul>
-      <p>All documents are delivered in PDF format via email. Document bundles include a Notarization Checklist and Asset Funding Guide specific to Indiana.</p>
-      <div class="hl">
-        <strong>Documents are not legally effective until properly signed, witnessed (where required), and notarized in accordance with Indiana law.</strong> Receiving your documents does not mean your trust is created — execution and funding are your responsibility.
-      </div>
+      <p>Michiana Trust Planning provides educational materials and document preparation services. Depending on the product you purchase or request, we may provide a checklist, workbook, or personalized estate planning document bundle.</p>
+      <p>Documents are not legally effective until properly signed, witnessed where required, notarized, and, when applicable, funded or recorded under Indiana law.</p>
     </div>
 
     <div class="tos-section" id="s5">
       <h2><span class="num">5</span>Payments and Refunds</h2>
-      <p>All payments are processed securely through Stripe. By completing a purchase, you authorize us to charge your payment method for the amount shown at checkout.</p>
-      <p><strong>Refund Policy:</strong></p>
-      <ul>
-        <li><strong>Before form submission:</strong> If you have paid but not yet submitted your intake form, you may request a full refund within 7 days of purchase by contacting us at hello@michianatrustplanning.com.</li>
-        <li><strong>After document delivery:</strong> Once your documents have been generated and delivered, we offer a 30-day satisfaction guarantee. If you are not satisfied with your documents for any reason, contact us and we will work to resolve the issue or issue a refund at our discretion.</li>
-        <li><strong>No refunds will be issued</strong> for documents that have been used in any legal proceeding or submitted to any government office or financial institution.</li>
-      </ul>
-      <p>Prices are listed in US dollars and are subject to change. Sales tax may apply depending on your location.</p>
+      <p>When paid products are offered, payments are processed through third-party providers such as Stripe. By completing a purchase, you authorize the applicable charge shown at checkout.</p>
+      <p>Refund handling, if offered for a specific product, is governed by the terms presented at the time of purchase. If you have a billing question, contact us using the information below.</p>
     </div>
 
     <div class="tos-section" id="s6">
       <h2><span class="num">6</span>Document Delivery</h2>
-      <p>Documents are delivered by email to the address you provide in your intake form, typically within minutes of form submission. You are responsible for providing a valid, working email address.</p>
-      <p>We are not responsible for documents that are undelivered due to spam filters, incorrect email addresses, full inboxes, or other factors outside our control. If you do not receive your documents within 24 hours of submission, contact us at hello@michianatrustplanning.com.</p>
-      <p>You should save and back up your documents promptly upon receipt. We retain copies for a reasonable period but cannot guarantee indefinite storage.</p>
+      <p>Free and paid digital materials are generally delivered electronically. You are responsible for providing a valid email address and checking spam or promotions folders if delivery appears delayed.</p>
+      <p>We are not responsible for failed delivery caused by inaccurate information, inbox filtering, or third-party system outages outside our control.</p>
     </div>
 
     <div class="tos-section" id="s7">
       <h2><span class="num">7</span>Your Responsibilities</h2>
-      <p>By using our services, you acknowledge and agree that:</p>
       <ul>
-        <li>You are solely responsible for reviewing your completed documents for accuracy before signing</li>
-        <li>You are solely responsible for properly executing (signing, witnessing, and notarizing) your documents in accordance with Indiana law</li>
-        <li>You are solely responsible for funding your trust by transferring assets into it</li>
-        <li>You are responsible for recording any deeds with the appropriate Indiana county recorder's office</li>
-        <li>You will seek independent legal advice if you are uncertain whether our service is appropriate for your situation</li>
-        <li>You will update your documents as your life circumstances change</li>
+        <li>You are responsible for reviewing your completed documents for accuracy before signing.</li>
+        <li>You are responsible for proper execution, notarization, funding, and recording where required.</li>
+        <li>You are responsible for seeking legal advice when your circumstances are complex or unclear.</li>
       </ul>
     </div>
 
     <div class="tos-section" id="s8">
       <h2><span class="num">8</span>Accuracy of Information You Provide</h2>
-      <p>The quality and legal effectiveness of your documents depend entirely on the accuracy of the information you provide in our intake form. You represent and warrant that all information you submit is true, accurate, current, and complete.</p>
-      <p>We are not responsible for errors, omissions, or legal problems arising from inaccurate, incomplete, or misleading information you provide. If you discover an error in your submitted information after document delivery, contact us immediately at hello@michianatrustplanning.com.</p>
-      <div class="hl red">
-        <strong>Do not guess on legal descriptions, parcel numbers, or the names of parties.</strong> Errors in these fields can create title problems that are expensive to correct.
-      </div>
+      <p>The quality and legal usefulness of prepared documents depends on the accuracy of the information you submit. We are not responsible for errors caused by incomplete, inaccurate, or outdated information supplied by you.</p>
     </div>
 
     <div class="tos-section" id="s9">
       <h2><span class="num">9</span>Limitation of Liability</h2>
-      <p>To the fullest extent permitted by Indiana law, Michiana Trust Planning, its owners, employees, and agents shall not be liable for:</p>
-      <ul>
-        <li>Any errors or omissions in the documents prepared based on information you provide</li>
-        <li>Any failure of your estate plan due to improper execution, failure to fund the trust, or changed circumstances</li>
-        <li>Any probate proceedings that occur despite use of our services</li>
-        <li>Any indirect, incidental, special, consequential, or punitive damages of any kind</li>
-        <li>Any loss arising from your reliance on our documents as legal advice</li>
-      </ul>
-      <p>Our total liability to you for any claim arising from use of our services shall not exceed the amount you paid for the specific service giving rise to the claim.</p>
-      <p>Some jurisdictions do not allow limitations on liability. If you are located in such a jurisdiction, some of the above limitations may not apply to you.</p>
+      <p>To the fullest extent permitted by Indiana law, Michiana Trust Planning will not be liable for indirect, incidental, consequential, or punitive damages arising out of your use of the site, educational materials, or document preparation services.</p>
+      <p>Our total liability for any claim related to a paid service will not exceed the amount you paid for that service.</p>
     </div>
 
     <div class="tos-section" id="s10">
       <h2><span class="num">10</span>Intellectual Property</h2>
-      <p>The document templates, website content, guides, and other materials provided by Michiana Trust Planning are our proprietary property. By purchasing our services, you receive a personal, non-transferable license to use the documents we generate for your own estate planning purposes only.</p>
-      <p>You may not:</p>
-      <ul>
-        <li>Resell, redistribute, or sublicense our document templates</li>
-        <li>Use our templates to prepare documents for others for compensation</li>
-        <li>Reproduce our educational guides or website content without written permission</li>
-      </ul>
-      <p>The documents we generate for you — with your personal information merged in — belong to you and may be used freely for your personal estate planning purposes.</p>
+      <p>The site content, educational materials, templates, and branding are owned by Michiana Trust Planning unless otherwise stated. You may use purchased or delivered materials for your own personal estate planning purposes, but you may not resell, redistribute, or repurpose them commercially without written permission.</p>
     </div>
 
     <div class="tos-section" id="s11">
       <h2><span class="num">11</span>Privacy</h2>
-      <p>Your use of our services is also governed by our Privacy Policy, which is incorporated into these Terms by reference. By using our services, you consent to the collection and use of your information as described in our Privacy Policy.</p>
-      <p>We take the security of your personal information seriously. We do not sell your personal information to third parties. Your intake information is used solely to generate your documents and communicate with you about your order.</p>
-      <p>All payment processing is handled by Stripe. We do not store your payment card information on our servers.</p>
+      <p>Your use of our services is also governed by our <a href="/privacy.html">Privacy Policy</a>, which explains how we collect, use, and store your information.</p>
     </div>
 
     <div class="tos-section" id="s12">
       <h2><span class="num">12</span>Governing Law and Dispute Resolution</h2>
-      <p>These Terms of Service shall be governed by and construed in accordance with the laws of the State of Indiana, without regard to its conflict of law provisions.</p>
-      <p>Any dispute arising from your use of our services shall first be addressed through good-faith negotiation. If not resolved informally, disputes shall be submitted to binding arbitration in St. Joseph County, Indiana, under the rules of the American Arbitration Association, except that either party may seek injunctive relief in any court of competent jurisdiction.</p>
-      <p>You agree that any claim must be brought in your individual capacity and not as a class action or representative proceeding.</p>
+      <p>These Terms are governed by the laws of the State of Indiana, without regard to conflict-of-law rules. Any dispute relating to these Terms or our services will be handled in accordance with applicable Indiana law.</p>
     </div>
 
     <div class="tos-section" id="s13">
       <h2><span class="num">13</span>Changes to These Terms</h2>
-      <p>We reserve the right to update or modify these Terms of Service at any time. Changes will be posted to this page with an updated effective date. Your continued use of our services after changes are posted constitutes your acceptance of the revised terms.</p>
-      <p>We will make reasonable efforts to notify users of material changes via email or a prominent notice on our website.</p>
+      <p>We may update these Terms from time to time. Any updated version will be posted on this page with a revised effective date.</p>
     </div>
 
     <div class="tos-section" id="s14">
       <h2><span class="num">14</span>Contact Us</h2>
-      <p>If you have questions about these Terms of Service, or about your documents or order, please contact us:</p>
       <ul>
-        <li><strong>Email:</strong> <a href="mailto:hello@michianatrustplanning.com">hello@michianatrustplanning.com</a></li>
-        <li><strong>Website:</strong> <a href="https://michianatrustplanning.com">michianatrustplanning.com</a></li>
+        <li><strong>Email:</strong> <a href="mailto:keith@anchoradvisorsnorth.com">keith@anchoradvisorsnorth.com</a></li>
+        <li><strong>Website:</strong> <a href="https://www.michianatrustplanning.com">michianatrustplanning.com</a></li>
         <li><strong>Service Area:</strong> Indiana</li>
       </ul>
-      <p style="margin-top:1.25rem;font-size:.85rem;color:var(--muted);">We typically respond to all inquiries within 1–2 business days.</p>
     </div>
-
   </article>
 </div>
 
@@ -294,10 +215,9 @@ footer p{font-size:.75rem;color:rgba(255,255,255,.25);}
     <a href="/">Home</a>
     <a href="/terms.html">Terms of Service</a>
     <a href="/privacy.html">Privacy Policy</a>
-    <a href="mailto:hello@michianatrustplanning.com">Contact</a>
+    <a href="mailto:keith@anchoradvisorsnorth.com">Contact</a>
   </div>
   <p>© 2026 Michiana Trust Planning · michianatrustplanning.com · Indiana Document Preparation Services</p>
 </footer>
-
 </body>
 </html>
