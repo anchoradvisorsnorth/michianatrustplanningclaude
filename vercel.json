@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/free-checklist", "destination": "/checklist.html" }
+  ]
+}
