@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Michiana Trust Planning — Indiana Estate Planning Documents</title>
-<meta name="description" content="Indiana attorney-reviewed trust planning documents — from a free checklist to a complete 7-document bundle. Protect your family without the attorney fees.">
-<meta property="og:title" content="Michiana Trust Planning — DIY Indiana Estate Planning" />
-<meta property="og:description" content="Indiana attorney-reviewed trust planning documents — from a free checklist to a complete 7-document bundle. Skip the $2,400 attorney bill." />
+<title>Michiana Trust Planning — Indiana & Michigan Estate Planning Documents</title>
+<meta name="description" content="Attorney-reviewed trust planning documents for Indiana and Michigan families — from a free checklist to a complete 7-document bundle. Protect your family without the attorney fees.">
+<meta property="og:title" content="Michiana Trust Planning — DIY Estate Planning for Indiana & Michigan" />
+<meta property="og:description" content="Attorney-reviewed trust planning documents for Indiana and Michigan families — from a free checklist to a complete 7-document bundle. Skip the $2,400 attorney bill." />
 <meta property="og:url" content="https://michianatrustplanning.com" />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="https://michianatrustplanning.com/og-image.png" />
@@ -20,7 +20,7 @@
   "url": "https://michianatrustplanning.com",
   "areaServed": [
     { "@type": "State", "name": "Indiana" },
-    { "@type": "Place", "name": "Southwest Michigan" }
+    { "@type": "State", "name": "Michigan" }
   ],
   "priceRange": "Free–$199"
 }
@@ -330,6 +330,34 @@ nav {
   font-size: 0.88rem; color: var(--sage); font-weight: 500;
 }
 
+/* STATE PICKER */
+.state-picker {
+  display: flex; gap: 6px; margin-bottom: 18px;
+}
+.state-btn {
+  flex: 1; padding: 10px 16px; border: 1.5px solid var(--border);
+  background: var(--white); color: var(--muted); font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem; font-weight: 500; border-radius: 8px; cursor: pointer;
+  transition: all .2s;
+}
+.state-btn:hover { border-color: var(--gold); color: var(--navy); }
+.state-btn.active {
+  background: var(--navy); color: #fff; border-color: var(--navy); font-weight: 600;
+}
+.state-picker-hero {
+  display: flex; gap: 6px; margin-bottom: 22px;
+}
+.state-btn-hero {
+  padding: 8px 20px; border: 1.5px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.6);
+  font-family: 'Poppins', sans-serif; font-size: 0.82rem; font-weight: 500;
+  border-radius: 8px; cursor: pointer; transition: all .2s;
+}
+.state-btn-hero:hover { border-color: var(--gold-lt); color: #fff; }
+.state-btn-hero.active {
+  background: var(--gold); color: var(--navy); border-color: var(--gold); font-weight: 600;
+}
+
 /* FEATURED STEP */
 .step-featured {
   background: var(--white);
@@ -591,7 +619,7 @@ body.js-ready .fi.vis { opacity: 1; transform: translateY(0); }
 
 <!-- TOPBAR -->
 <div class="topbar">
-  🛡️ Attorney-reviewed <span>·</span> Indiana-specific <span>·</span> No attorney required by Indiana law
+  🛡️ Attorney-reviewed <span>·</span> <span id="topbar-state">Indiana</span>-specific <span>·</span> No attorney required by law
 </div>
 
 <!-- NAV -->
@@ -599,7 +627,7 @@ body.js-ready .fi.vis { opacity: 1; transform: translateY(0); }
   <div class="nav-inner">
     <div class="nav-logo">
       <strong>Michiana Trust Planning</strong>
-      <small>Indiana Estate Planning Documents</small>
+      <small id="nav-sub">Indiana &amp; Michigan Estate Planning</small>
     </div>
     <ul class="nav-links">
       <li><a href="#why">Why a Trust</a></li>
@@ -616,11 +644,16 @@ body.js-ready .fi.vis { opacity: 1; transform: translateY(0); }
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-left">
-      <div class="hero-eyebrow">✓ Attorney-Reviewed · Indiana-Specific Documents</div>
+      <div class="hero-eyebrow">✓ Attorney-Reviewed · <span id="hero-eyebrow-state">Indiana</span>-Specific Documents</div>
+      <!-- State picker in hero -->
+      <div class="state-picker-hero">
+        <button class="state-btn-hero active" data-state="in" onclick="setState('in')">Indiana</button>
+        <button class="state-btn-hero" data-state="mi" onclick="setState('mi')">Michigan</button>
+      </div>
       <h1>Protect your family.<br><em>Skip the $2,400 attorney bill.</em></h1>
-      <p class="hero-sub">Indiana doesn't require an attorney to create a revocable living trust. We give you 7 attorney-reviewed documents, plain-English guidance, and a step-by-step funding guide — so your trust actually works.</p>
+      <p class="hero-sub"><span id="hero-state">Indiana</span> doesn't require an attorney to create a revocable living trust. We give you 7 attorney-reviewed documents, plain-English guidance, and a step-by-step funding guide — so your trust actually works.</p>
       <div class="hero-proof">
-        <div class="hero-proof-item">No attorney required in Indiana</div>
+        <div class="hero-proof-item">No attorney required in <span class="st-name">Indiana</span></div>
         <div class="hero-proof-item">7 complete, signed-ready documents</div>
         <div class="hero-proof-item">Avoid probate — stay private</div>
         <div class="hero-proof-item">Funding guide included</div>
@@ -635,8 +668,8 @@ body.js-ready .fi.vis { opacity: 1; transform: translateY(0); }
             <div class="rung-badge free-badge">FREE</div>
           </div>
           <div class="rung-body">
-            <div class="rung-title">Indiana Trust Readiness Checklist</div>
-            <div class="rung-desc">Everything you need for a complete Indiana trust plan — delivered to your inbox.</div>
+            <div class="rung-title"><span class="st-name">Indiana</span> Trust Readiness Checklist</div>
+            <div class="rung-desc">Everything you need for a complete <span class="st-name">Indiana</span> trust plan — delivered to your inbox.</div>
           </div>
           <div class="rung-arrow">→</div>
         </a>
@@ -651,7 +684,7 @@ body.js-ready .fi.vis { opacity: 1; transform: translateY(0); }
             <div class="rung-price">$29<span class="rung-cents">.99</span></div>
           </div>
           <div class="rung-body">
-            <div class="rung-title">Indiana Revocable Living Trust Workbook</div>
+            <div class="rung-title"><span class="st-name">Indiana</span> Revocable Living Trust Workbook</div>
             <div class="rung-desc">15-page guided workbook. Understand the process, capture every decision, arrive ready.</div>
           </div>
           <div class="rung-arrow gold-arrow">→</div>
@@ -667,7 +700,7 @@ body.js-ready .fi.vis { opacity: 1; transform: translateY(0); }
           </div>
           <div class="rung-body">
             <div class="rung-title">Complete Document Bundle</div>
-            <div class="rung-desc">All 7 attorney-reviewed Indiana documents, personalized &amp; delivered in minutes.</div>
+            <div class="rung-desc">All 7 attorney-reviewed <span class="st-name">Indiana</span> documents, personalized &amp; delivered in minutes.</div>
           </div>
           <div class="rung-arrow">→</div>
         </a>
@@ -771,14 +804,19 @@ body.js-ready .fi.vis { opacity: 1; transform: translateY(0); }
         </div>
         <div class="step-body">
           <span class="step-tag free">Free</span>
-          <h3 style="font-size:1.25rem;color:var(--navy);font-family:'Lora',serif;margin-bottom:4px">Indiana Trust Readiness Checklist</h3>
+          <!-- State picker in funnel -->
+          <div class="state-picker" style="margin-top:8px">
+            <button class="state-btn active" data-state="in" onclick="setState('in')">Indiana</button>
+            <button class="state-btn" data-state="mi" onclick="setState('mi')">Michigan</button>
+          </div>
+          <h3 style="font-size:1.25rem;color:var(--navy);font-family:'Lora',serif;margin-bottom:4px" id="funnel-checklist-title"><span class="st-name">Indiana</span> Trust Readiness Checklist</h3>
           <div class="step-price is-free">Free — instant download</div>
           <div class="step-sub">No credit card. No strings attached.</div>
-          <p class="step-desc">A step-by-step checklist covering everything an Indiana family needs for a complete, funded revocable living trust plan — from document requirements to funding every asset category. Know exactly where you stand and what needs to happen next.</p>
+          <p class="step-desc">A step-by-step checklist covering everything a <span class="st-name">Indiana</span> family needs for a complete, funded revocable living trust plan — from document requirements to funding every asset category. Know exactly where you stand and what needs to happen next.</p>
           <ul class="step-items">
             <li><span class="chk">✓</span> All 7 documents explained with purpose and requirements</li>
             <li><span class="chk">✓</span> Asset-by-asset funding checklist (real estate, accounts, insurance, business interests)</li>
-            <li><span class="chk">✓</span> Indiana-specific requirements: notarization, recording, and execution rules</li>
+            <li><span class="chk">✓</span> <span class="st-name">Indiana</span>-specific requirements: notarization, recording, and execution rules</li>
             <li><span class="chk">✓</span> Common mistakes that leave families exposed — and how to avoid them</li>
             <li><span class="chk">✓</span> Delivered to your inbox immediately</li>
           </ul>
@@ -802,7 +840,7 @@ body.js-ready .fi.vis { opacity: 1; transform: translateY(0); }
         </div>
         <div class="step-body">
           <span class="step-tag starter">Deep-Dive Workbook</span>
-          <h3 style="font-size:1.25rem;color:var(--navy);font-family:'Lora',serif;margin-bottom:4px">The Indiana Revocable Living Trust Workbook</h3>
+          <h3 style="font-size:1.25rem;color:var(--navy);font-family:'Lora',serif;margin-bottom:4px">The <span class="st-name">Indiana</span> Revocable Living Trust Workbook</h3>
           <div class="step-price">$29.99</div>
           <div class="step-sub">One-time · PDF download · Printable &amp; fillable</div>
           <p class="step-desc">A 15-page guided workbook that explains the full trust planning process and captures every decision your plan requires — trustees, beneficiaries, asset inventory, healthcare agents, and end-of-life preferences. Arrive at the document stage knowing exactly what you need.</p>
@@ -814,7 +852,7 @@ body.js-ready .fi.vis { opacity: 1; transform: translateY(0); }
             <li><span class="chk">✓</span> Fillable planning worksheet: trustees, beneficiaries, assets, healthcare agents</li>
             <li><span class="chk">✓</span> Attorney-reviewed content</li>
           </ul>
-          <a href="https://buy.stripe.com/14AaEWdPvdhp4yW8RN0co00" class="btn-outline" id="buy-workbook" onclick="fbq('track', 'InitiateCheckout', { value: 29.99, currency: 'USD', content_name: 'Workbook' })">Get the Workbook — $29.99 →</a>
+          <a href="https://buy.stripe.com/14AaEWdPvdhp4yW8RN0co00" class="btn-outline" id="buy-workbook" onclick="fbq('track', 'InitiateCheckout', { value: 29.99, currency: 'USD', content_name: 'Workbook', content_category: currentState.toUpperCase() })">Get the Workbook — $29.99 →</a>
         </div>
       </div>
 
@@ -827,7 +865,7 @@ body.js-ready .fi.vis { opacity: 1; transform: translateY(0); }
           <div class="step-featured">
             <div class="step-featured-badge">⭐ MOST POPULAR</div>
             <span class="step-tag core" style="background:rgba(28,43,58,0.06)">Complete Document Bundle</span>
-            <h3 style="font-size:1.25rem;color:var(--navy);font-family:'Lora',serif;margin-bottom:4px">Complete Indiana Trust Bundle</h3>
+            <h3 style="font-size:1.25rem;color:var(--navy);font-family:'Lora',serif;margin-bottom:4px">Complete <span class="st-name">Indiana</span> Trust Bundle</h3>
             <div class="step-price">$199</div>
             <div class="step-sub"><s style="color:var(--red)">$1,500–$3,000 with an attorney</s> · One-time payment · No subscription</div>
             <p class="step-desc">All 7 attorney-reviewed Indiana trust documents, personalized to your situation through a plain-English intake process. Delivered to your inbox — typically within minutes.</p>
@@ -890,14 +928,14 @@ body.js-ready .fi.vis { opacity: 1; transform: translateY(0); }
         <div class="doc-num">4</div>
         <div class="doc-text">
           <h4>Durable Financial POA</h4>
-          <p>Authorizes your agent to handle financial matters if you're incapacitated — for assets not yet inside the trust. Includes authority under Indiana Code 30-5.</p>
+          <p id="doc-poa-desc">Authorizes your agent to handle financial matters if you're incapacitated — for assets not yet inside the trust. Includes authority under Indiana Code 30-5.</p>
           <span class="doc-tag">Incapacity coverage</span>
         </div>
       </div>
       <div class="doc-card">
         <div class="doc-num">5</div>
         <div class="doc-text">
-          <h4>Health Care Rep + Living Will</h4>
+          <h4 id="doc-hc-title">Health Care Rep + Living Will</h4>
           <p>Covers medical decisions and end-of-life instructions. Ensures your healthcare preferences are followed if you can't communicate them.</p>
           <span class="doc-tag">Medical authority</span>
         </div>
@@ -913,8 +951,8 @@ body.js-ready .fi.vis { opacity: 1; transform: translateY(0); }
       <div class="doc-card">
         <div class="doc-num">7</div>
         <div class="doc-text">
-          <h4>Indiana Quitclaim Deed to Trust</h4>
-          <p>Retitles your Indiana real estate into the trust. If property is not retitled, it may still require probate — this document prevents that.</p>
+          <h4 id="doc-deed-title">Indiana Quitclaim Deed to Trust</h4>
+          <p id="doc-deed-desc">Retitles your Indiana real estate into the trust. If property is not retitled, it may still require probate — this document prevents that.</p>
           <span class="doc-tag">Real estate transfer</span>
         </div>
       </div>
@@ -1008,8 +1046,8 @@ body.js-ready .fi.vis { opacity: 1; transform: translateY(0); }
     <div class="footer-grid">
       <div class="footer-logo">
         <strong>Michiana Trust Planning</strong>
-        <small>Indiana Estate Planning Documents</small>
-        <p>Helping Indiana families protect what they've built — without the attorney fees.</p>
+        <small>Indiana &amp; Michigan Estate Planning</small>
+        <p>Helping Michiana families protect what they've built — without the attorney fees.</p>
       </div>
       <div class="footer-col">
         <h5>Product</h5>
@@ -1031,7 +1069,7 @@ body.js-ready .fi.vis { opacity: 1; transform: translateY(0); }
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-disclaimer">Legal Disclaimer: Michiana Trust Planning is a document preparation service only. We are not a law firm and do not provide legal advice. All templates have been reviewed by a licensed Indiana estate attorney. Indiana law does not require an attorney to create a revocable living trust. By using this service, you acknowledge you are purchasing document preparation services only, not legal counsel.</p>
+      <p class="footer-disclaimer">Legal Disclaimer: Michiana Trust Planning is a document preparation service only. We are not a law firm and do not provide legal advice. All templates have been reviewed by a licensed estate attorney. Neither Indiana nor Michigan law requires an attorney to create a revocable living trust. By using this service, you acknowledge you are purchasing document preparation services only, not legal counsel.</p>
       <p class="footer-copy">© 2026 Michiana Trust Planning</p>
     </div>
   </div>
@@ -1058,6 +1096,71 @@ function faq(btn) {
   if (!open) { btn.classList.add('open'); a.classList.add('open'); }
 }
 
+// ── STATE MANAGEMENT ──
+let currentState = 'in';
+const stateData = {
+  in: {
+    name: 'Indiana',
+    poaRef: 'Includes authority under Indiana Code 30-5.',
+    hcTitle: 'Health Care Rep + Living Will',
+    deedTitle: 'Indiana Quitclaim Deed to Trust',
+    deedDesc: 'Retitles your Indiana real estate into the trust. If property is not retitled, it may still require probate — this document prevents that.',
+    workbookUrl: 'https://buy.stripe.com/14AaEWdPvdhp4yW8RN0co00'
+  },
+  mi: {
+    name: 'Michigan',
+    poaRef: 'Governed by Michigan EPIC MCL 700.5501.',
+    hcTitle: 'Patient Advocate + Advance Directive',
+    deedTitle: 'Michigan Quit Claim Deed to Trust',
+    deedDesc: 'Retitles your Michigan real estate into the trust. If property is not retitled, it may still require probate — this document prevents that.',
+    workbookUrl: 'https://buy.stripe.com/dRm14mh1H1yH4yW4Bx0co01'
+  }
+};
+
+function setState(st) {
+  currentState = st;
+  const d = stateData[st];
+  // Update all .st-name spans
+  document.querySelectorAll('.st-name').forEach(el => el.textContent = d.name);
+  // Specific elements
+  const ids = {
+    'topbar-state': d.name,
+    'hero-eyebrow-state': d.name,
+    'hero-state': d.name,
+    'doc-poa-desc': `Authorizes your agent to handle financial matters if you're incapacitated — for assets not yet inside the trust. ${d.poaRef}`,
+    'doc-hc-title': d.hcTitle,
+    'doc-deed-title': d.deedTitle,
+    'doc-deed-desc': d.deedDesc
+  };
+  for (const [id, val] of Object.entries(ids)) {
+    const el = document.getElementById(id);
+    if (el) el.textContent = val;
+  }
+  // Toggle active on ALL state buttons (hero + funnel)
+  document.querySelectorAll('.state-btn, .state-btn-hero').forEach(b => {
+    b.classList.toggle('active', b.dataset.state === st);
+  });
+  // Update workbook buy link
+  const buyBtn = document.getElementById('buy-workbook');
+  if (buyBtn && d.workbookUrl) {
+    buyBtn.href = d.workbookUrl;
+  } else if (buyBtn && !d.workbookUrl) {
+    // MI workbook link not yet created — keep IN link as fallback, will update
+    buyBtn.href = stateData.in.workbookUrl;
+  }
+  // Update URL without reload
+  const url = new URL(window.location);
+  url.searchParams.set('state', st);
+  history.replaceState(null, '', url);
+}
+
+// Read ?state= on load
+(function() {
+  const params = new URLSearchParams(window.location.search);
+  const st = (params.get('state') || 'in').toLowerCase();
+  if (st === 'mi') setState('mi');
+})();
+
 // ── CHECKLIST SIGNUP ──
 async function clSub() {
   const emailEl = document.getElementById('cl-em');
@@ -1071,12 +1174,12 @@ async function clSub() {
     const res = await fetch('/api/subscribe', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email: v })
+      body: JSON.stringify({ email: v, state: currentState })
     });
     if (res.ok) {
       document.getElementById('checklist-form').style.display = 'none';
       document.getElementById('checklist-ok').style.display  = 'block';
-      if (typeof fbq === 'function') fbq('track', 'Lead', { content_name: 'Free Checklist' });
+      if (typeof fbq === 'function') fbq('track', 'Lead', { content_name: 'Free Checklist', content_category: currentState.toUpperCase() });
     } else { throw new Error(); }
   } catch {
     btn.disabled = false;
