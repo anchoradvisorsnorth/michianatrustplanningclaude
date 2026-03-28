@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#f5f1ea"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="12" height="630" fill="#b07d2e"/>
+
+  <!-- Gold decorative rule -->
+  <line x1="80" y1="200" x2="160" y2="200" stroke="#b07d2e" stroke-width="2"/>
+
+  <!-- Wordmark -->
+  <text x="80" y="270" font-family="Georgia, 'Times New Roman', serif" font-weight="600" font-size="58" fill="#1c2b3a" letter-spacing="-0.5">Michiana Trust Planning</text>
+
+  <!-- Tagline -->
+  <text x="80" y="340" font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-weight="400" font-size="28" fill="#1c2b3a">Indiana Estate Planning Documents</text>
+
+  <!-- Value prop -->
+  <text x="80" y="400" font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-weight="300" font-size="22" fill="#6b7787">Free checklist  ·  $29.99 workbook  ·  $199 document bundle</text>
+
+  <!-- Supporting line -->
+  <text x="80" y="460" font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-weight="400" font-size="18" fill="#6b7787">Attorney-reviewed  ·  Indiana-specific  ·  michianatrustplanning.com</text>
+
+  <!-- Bottom gold accent bar -->
+  <rect x="0" y="618" width="1200" height="12" fill="#b07d2e"/>
+</svg>
