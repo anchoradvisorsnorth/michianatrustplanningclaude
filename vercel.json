@@ -1,5 +1,7 @@
 {
   "rewrites": [
-    { "source": "/free-checklist", "destination": "/checklist.html" }
+    { "source": "/free-checklist", "destination": "/checklist.html" },
+    { "source": "/indiana-checklist", "destination": "/checklist.html?state=in" },
+    { "source": "/michigan-checklist", "destination": "/checklist.html?state=mi" }
   ]
 }
