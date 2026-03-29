@@ -1,4 +1,7 @@
 {
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/free-checklist", "destination": "/checklist.html" },
     { "source": "/indiana-checklist", "destination": "/checklist.html?state=in" },
